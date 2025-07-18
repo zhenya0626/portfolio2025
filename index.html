@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riana Uchima - iOS Developer</title>
+    <meta name="description" content="iOSデベロッパー Riana Uchimaのポートフォリオサイト。日常を豊かにするiOSアプリを開発しています。">
+    
+    <!-- OGP設定 -->
+    <meta property="og:title" content="Riana Uchima - iOS Developer">
+    <meta property="og:description" content="iOSデベロッパー Riana Uchimaのポートフォリオサイト。日常を豊かにするiOSアプリを開発しています。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://riana-uchima.com">
+    <meta property="og:image" content="https://riana-uchima.com/images/ogp.jpg">
+    
+    <!-- ファビコン -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">
+                <a href="/">Riana Uchima</a>
+            </h1>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#works" class="nav-link">Works</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main>
+        <!-- ファーストビュー -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <p class="hero-tagline">日常を豊かにするiOSアプリを開発しています。</p>
+                    <h2 class="hero-title">Riana Uchima / iOS Developer</h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- About セクション -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="images/profile.jpg" alt="Riana Uchima">
+                    </div>
+                    <div class="about-text">
+                        <p>iOSデベロッパーのRiana Uchimaです。ユーザーの日常生活を豊かにするアプリケーションの開発に情熱を注いでいます。</p>
+                        <p>Swift、SwiftUIを中心に、モダンなiOS開発技術を活用し、直感的で美しいユーザーインターフェースを持つアプリを制作しています。</p>
+                        <div class="skills">
+                            <h3>スキル</h3>
+                            <ul class="skill-list">
+                                <li>Swift</li>
+                                <li>SwiftUI</li>
+                                <li>UIKit</li>
+                                <li>Core Data</li>
+                                <li>Firebase</li>
+                                <li>API Integration</li>
+                            </ul>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="GitHub">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.341-3.369-1.341-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Twitter">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Works セクション -->
+        <section id="works" class="works">
+            <div class="container">
+                <h2 class="section-title">Works</h2>
+                <div class="works-grid">
+                    <!-- 1. ルーブル美術館クイズ -->
+                    <a href="/works/louvre-quiz.html" class="work-card">
+                        <div class="work-icon">
+                            <img src="images/apps/louvre-quiz-icon.png" alt="ルーブル美術館クイズ">
+                        </div>
+                        <h3 class="work-title">ルーブル美術館クイズ</h3>
+                        <p class="work-description">ルーブル美術館の名作を楽しく学べる教育クイズアプリ</p>
+                    </a>
+                    
+                    <!-- 2. 音感トレーニング × 神経衰弱 -->
+                    <a href="/works/ongaku-training.html" class="work-card">
+                        <div class="work-icon">
+                            <img src="images/apps/ongaku-training-icon.png" alt="音感トレーニング × 神経衰弱">
+                        </div>
+                        <h3 class="work-title">音感トレーニング × 神経衰弱</h3>
+                        <p class="work-description">遊びながら音感を鍛える革新的なミュージックゲーム</p>
+                    </a>
+                    
+                    <!-- 3. 推しミュージシャンノート -->
+                    <a href="/works/oshi-musician-note.html" class="work-card">
+                        <div class="work-icon">
+                            <img src="images/apps/oshi-musician-note-icon.png" alt="推しミュージシャンノート">
+                        </div>
+                        <h3 class="work-title">推しミュージシャンノート</h3>
+                        <p class="work-description">好きなアーティストの情報を整理できる専用ノートアプリ</p>
+                    </a>
+                    
+                    <!-- 4. 激ムズ！フォントクイズ -->
+                    <a href="/works/font-quiz.html" class="work-card">
+                        <div class="work-icon">
+                            <img src="images/apps/font-quiz-icon.png" alt="激ムズ！フォントクイズ">
+                        </div>
+                        <h3 class="work-title">激ムズ！フォントクイズ</h3>
+                        <p class="work-description">デザイナー必見！フォントの知識を試すチャレンジングなクイズ</p>
+                    </a>
+                    
+                    <!-- 5. アフリカの国旗・首都・場所を覚えよう -->
+                    <a href="/works/africa-study.html" class="work-card">
+                        <div class="work-icon">
+                            <img src="images/apps/africa-study-icon.png" alt="アフリカの国旗・首都・場所を覚えよう">
+                        </div>
+                        <h3 class="work-title">アフリカの国旗・首都・場所を覚えよう</h3>
+                        <p class="work-description">アフリカ54か国の地理を楽しく学べる教育アプリ</p>
+                    </a>
+                    
+                    <!-- 6. Copa -->
+                    <a href="/works/copa.html" class="work-card">
+                        <div class="work-icon">
+                            <img src="images/apps/copa-icon.png" alt="Copa">
+                        </div>
+                        <h3 class="work-title">Copa – 気分を整えるための自分だけのリスト</h3>
+                        <p class="work-description">日々の気分を整理し、心の健康を保つためのパーソナルツール</p>
+                    </a>
+                    
+                    <!-- 7. 有名絵画クイズ -->
+                    <a href="/works/famous-paintings-quiz.html" class="work-card">
+                        <div class="work-icon">
+                            <img src="images/apps/famous-paintings-quiz-icon.png" alt="有名絵画クイズ">
+                        </div>
+                        <h3 class="work-title">有名絵画クイズ</h3>
+                        <p class="work-description">世界の名画について楽しく学べるアートクイズアプリ</p>
+                    </a>
+                    
+                    <!-- 8. 脳トレ‑Touch ABC -->
+                    <a href="/works/touch-abc.html" class="work-card">
+                        <div class="work-icon">
+                            <img src="images/apps/touch-abc-icon.png" alt="脳トレ‑Touch ABC">
+                        </div>
+                        <h3 class="work-title">脳トレ‑Touch ABC</h3>
+                        <p class="work-description">アルファベットをタッチして脳を活性化するカジュアルゲーム</p>
+                    </a>
+                    
+                    <!-- 9. Touch the Number -->
+                    <a href="/works/touch-the-number.html" class="work-card">
+                        <div class="work-icon">
+                            <img src="images/apps/touch-the-number-icon.png" alt="Touch the Number">
+                        </div>
+                        <h3 class="work-title">Touch the Number</h3>
+                        <p class="work-description">数字を順番にタッチする反射神経トレーニングゲーム</p>
+                    </a>
+                    
+                    <!-- 10. 決まり字百人一首 -->
+                    <a href="/works/kimariji-hyakunin.html" class="work-card">
+                        <div class="work-icon">
+                            <img src="images/apps/kimariji-hyakunin-icon.png" alt="決まり字百人一首">
+                        </div>
+                        <h3 class="work-title">決まり字百人一首</h3>
+                        <p class="work-description">競技かるたの決まり字を効率的に学べる百人一首学習アプリ</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Riana Uchima</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

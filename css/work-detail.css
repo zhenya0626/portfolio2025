@@ -1,0 +1,278 @@
+/* 作品詳細ページ専用スタイル */
+
+/* パンくずリスト */
+.breadcrumb {
+    padding: 20px 0;
+    background-color: var(--color-bg-light);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.breadcrumb-list {
+    display: flex;
+    list-style: none;
+    font-size: 14px;
+}
+
+.breadcrumb-list li {
+    color: var(--color-text-light);
+}
+
+.breadcrumb-list li:not(:last-child)::after {
+    content: '>';
+    margin: 0 12px;
+    color: var(--color-text-light);
+}
+
+.breadcrumb-list a {
+    color: var(--color-text-light);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.breadcrumb-list a:hover {
+    color: var(--color-accent);
+}
+
+.breadcrumb-list li[aria-current="page"] {
+    color: var(--color-text);
+    font-weight: 500;
+}
+
+/* アプリ概要セクション */
+.app-overview {
+    padding: 60px 0;
+}
+
+.app-header {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.app-icon-large {
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+}
+
+.app-icon-large img {
+    width: 100%;
+    height: 100%;
+    border-radius: 26px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.app-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: -0.02em;
+}
+
+.app-tagline {
+    font-size: 20px;
+    color: var(--color-text-light);
+}
+
+.app-description {
+    max-width: 800px;
+}
+
+.app-description p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* セクション共通 */
+.section-subtitle {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 32px;
+    letter-spacing: -0.01em;
+}
+
+/* スクリーンショット */
+.screenshots {
+    padding: 60px 0;
+    background-color: var(--color-bg-light);
+}
+
+.screenshot-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+}
+
+.screenshot-item {
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+}
+
+.screenshot-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.screenshot-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 機能と特徴 */
+.features {
+    padding: 60px 0;
+}
+
+.feature-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.feature-list li {
+    position: relative;
+    padding-left: 32px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.feature-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--color-accent);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* 技術情報 */
+.tech-info {
+    padding: 60px 0;
+    background-color: var(--color-bg-light);
+}
+
+.tech-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.tech-description h4,
+.tech-stack h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.tech-description p {
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    list-style: none;
+}
+
+.tech-tags li {
+    background-color: var(--color-bg);
+    padding: 8px 20px;
+    border-radius: 24px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 2px solid var(--color-accent);
+    color: var(--color-accent);
+}
+
+/* App Store リンク */
+.app-store-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.app-store-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background-color: var(--color-text);
+    color: white;
+    padding: 16px 32px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.app-store-button:hover {
+    background-color: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .app-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .app-title {
+        font-size: 36px;
+    }
+    
+    .app-tagline {
+        font-size: 18px;
+    }
+    
+    .section-subtitle {
+        font-size: 24px;
+    }
+    
+    .screenshot-gallery {
+        grid-template-columns: 1fr;
+    }
+    
+    .feature-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .tech-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .breadcrumb-list {
+        font-size: 12px;
+    }
+    
+    .breadcrumb-list li:not(:last-child)::after {
+        margin: 0 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .app-icon-large {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .app-title {
+        font-size: 28px;
+    }
+    
+    .app-store-button {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+}
