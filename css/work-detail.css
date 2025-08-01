@@ -194,6 +194,29 @@
     color: var(--color-accent);
 }
 
+/* お問い合わせセクション */
+.contact-section {
+    padding: 60px 0;
+    /* border-bottom: 1px solid var(--color-border); */
+    background-color: var(--color-bg-light);
+}
+
+.contact-section p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+.contact-email {
+    color: var(--color-accent);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.contact-email:hover {
+    text-decoration: underline;
+}
+
 /* App Store リンク */
 .app-store-section {
     padding: 60px 0;
